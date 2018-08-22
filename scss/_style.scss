@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header.navbar {
+    box-shadow: 0 10px 20px rgba(black, 0.3);
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+
+    @include breakpoint(large) {
+        height: 200px;
+    }
+
+    img.main-logo {
+        height: 75px;
+        @include breakpoint(large) {
+            height: 125px;
+        }
+    }
+}
+
+section.main-content {
+
+    width: 100%;
+
+    flex: 1;
+
+    background-size: cover;
+    background-position: center;
+
+    .row .columns .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    audio {
+
+        width: 75%;
+    }
+}
